@@ -1,0 +1,26 @@
+/* Counter */
+
+
+body {
+  counter-reset: alaa-counter; /*if there more than one counter in the page. it wrote like that => counter-reset: alaa-counter ahmed-counter ali-counter; */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li:before {
+  counter-increment: alaa-counter;
+  content: counter(alaa-counter); /*content: counter(alaa-counter, upper-alpha);*/
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #234464;
+  color: #FFF;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
